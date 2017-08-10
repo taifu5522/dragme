@@ -6,10 +6,10 @@ Use this component to wrap the components you want to drag
 Or assign the component that you want to drag to the content props
 
 ### install:
-    npm install drag-component --save
+    npm install drag-compoment --save
 
 ### How to using:
-    import Dragme from 'drag-component'
+    import Dragme from 'drag-compoment'
 
     <Dragme><YouCompoment /></Dragme>
 
