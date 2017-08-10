@@ -21,17 +21,17 @@ or
 
 ### APIS
 1. onStart:
-* Call when move start
+* Call when move start\
 @params {Object} e Event Object
 
 2. onEnd:
-* Call when move end
+* Call when move end\
 @params {Object} e Event Object
 
 3. onMove:
-* Call when moving
-@params {Number} left content left value
-@params {Number} top content top value
+* Call when moving\
+@params {Number} left content left value\
+@params {Number} top content top value\
 @params {Object} e Event Object
 
 ### props
