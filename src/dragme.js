@@ -130,4 +130,4 @@ class Drag extends React.Component{
   }
 }
 
-modules.exports = Drag;
+module.exports = Drag;
