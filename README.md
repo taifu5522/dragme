@@ -1,14 +1,14 @@
 # Dragme
 
-### Dragme is an drag component with react.js\<br>
+### Dragme is an drag component with react.js\
 
-Use this component to wrap the components you want to drag\<br>
-Or assign the component that you want to drag to the content props\<br>
+Use this component to wrap the components you want to drag\
+Or assign the component that you want to drag to the content props\
 
-### install:\<br>
+### install:\
     npm install dragme --save
 
-### How to using:\<br>
+### How to using:\
     import Dragme from 'dragme'
 
     <Dragme><YouCompoment /></Dragme>
@@ -19,21 +19,21 @@ or
       content={<YouComponent />}
     />
 
-### APIS\<br>
+### APIS\
 1. onStart:
 * Call when move start
 
 2. onEnd:
 * Call when move end
 
-### props\<br>
+### props\
 1. top 
 * Initial top value
 
 2. left
 * Initial left value
 
-### github:\<br>
+### github:\
 
 * https://github.com/taifu5522/dragme
 
