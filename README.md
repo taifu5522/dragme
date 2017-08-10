@@ -5,7 +5,7 @@
 Use this component to wrap the components you want to drag\<br>
 Or assign the component that you want to drag to the content props\<br>
 
-### install:
+### install:\<br>
     npm install dragme --save
 
 ### How to using:\<br>
@@ -19,7 +19,21 @@ Or assign the component that you want to drag to the content props\<br>
       content={<YouComponent />}
     />
 
-### github:
-    
+### APIS\<br>
+1. onStart:
+* Call when move start
+
+2. onEnd:
+* Call when move end
+
+### props\<br>
+1. top 
+* Initial top value
+
+2. left
+* Initial left value
+
+### github:\<br>
+
 * https://github.com/taifu5522/dragme
-  
+

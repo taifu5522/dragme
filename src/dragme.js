@@ -1,14 +1,14 @@
 const React = require('react');
 
-class Dragme extends React.Component{
+class Drag extends React.Component{
   constructor(props){
     super(props);
     this.state = {
       canMove:false,
       x:0,
       y:0,
-      top:0,
-      left:0
+      top:this.props.top || 0,
+      left:this.props.left || 0,
     }
     this.timer = null;
   }
@@ -20,6 +20,15 @@ class Dragme extends React.Component{
       x:e.clientX,
       y:e.clientY
     });
+    try{
+      this.props.onStart && this.props.onStart(e);
+    }catch(e){
+      if(e instanceof TypeError){
+        throw new Error('Your onStart method may be not an function. Pless check your onStart function.')
+      }else{
+        throw new Error(e)
+      }
+    }
   }
 
   mouseUpHandle(e){
@@ -29,6 +38,15 @@ class Dragme extends React.Component{
       x:0,
       y:0,
     });
+    try{
+      this.props.onEnd && this.props.onEnd(e);
+    }catch(e){
+      if(e instanceof TypeError){
+        throw new Error('Your onEnd method may be not an function. Pless check your onEnd function.')
+      }else{
+        throw new Error(e)
+      }
+    }
   }
 
   mouseMoveHandle(e){
@@ -112,4 +130,4 @@ class Dragme extends React.Component{
   }
 }
 
-modules.exports = Dragme;
+modules.exports = Drag;
