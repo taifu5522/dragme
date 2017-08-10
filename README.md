@@ -13,7 +13,7 @@ Or assign the component that you want to drag to the content props\<br>
 
     <Dragme><YouCompoment /></Dragme>
 
-* or
+or
 
     <Dragme
       content={<YouComponent />}
