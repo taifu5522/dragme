@@ -19,6 +19,7 @@ class Drag extends React.Component{
       y:0,
       top:this.props.top || 0,
       left:this.props.left || 0,
+      cursor:'default'
     }
   }
 
@@ -27,7 +28,8 @@ class Drag extends React.Component{
     this.setState({
       canMove:true,
       x:e.clientX,
-      y:e.clientY
+      y:e.clientY,
+      cursor:'hand'
     });
     try{
       this.props.onStart && this.props.onStart(e);
@@ -46,6 +48,7 @@ class Drag extends React.Component{
       canMove:false,
       x:0,
       y:0,
+      cursor:'default'
     });
     try{
       this.props.onEnd && this.props.onEnd(e);
@@ -117,6 +120,7 @@ class Drag extends React.Component{
       <div 
         style={{
           position:'relative',
+          cursor:this.state.cursor
         }}
         onMouseDown={(e)=>{this.mouseDownHandle(e)}}
         onMouseMove={(e)=>{this.mouseMoveHandle(e)}}
