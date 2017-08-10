@@ -1,5 +1,15 @@
 const React = require('react');
 
+
+/**
+ * [speed] {Number} Drag acceleration
+ * [width] {Number} Content width
+ * top   {Number} Initial top
+ * left  {Number} Initial left
+ * onStart {Function} start hook function @params event 
+ * onEnd   {Function} end hook function @params event 
+ */
+
 class Drag extends React.Component{
   constructor(props){
     super(props);
@@ -10,7 +20,6 @@ class Drag extends React.Component{
       top:this.props.top || 0,
       left:this.props.left || 0,
     }
-    this.timer = null;
   }
 
   mouseDownHandle(e){
@@ -53,9 +62,6 @@ class Drag extends React.Component{
     if(!this.state.canMove){
       return false;
     }
-    if(this.timer){
-      return false;
-    }
     let _left = e.clientX - this.state.x;
     let _top = e.clientY - this.state.y;
 
@@ -63,7 +69,9 @@ class Drag extends React.Component{
     _top = this.calculationTop(_top);
 
     this.setState({left:_left,top:_top,x:e.clientX,y:e.clientY});
-    this.timer = null;
+    if(this.props.onMove){
+      this.props.onMove(_left,_top,e)
+    }
   }
 
   calculationLeft(left){

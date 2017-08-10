@@ -1,6 +1,6 @@
 {
   "name": "drag-compoment",
-  "version": "1.0.11",
+  "version": "1.0.2",
   "description": "",
   "main": "./lib/dragme.js",
   "scripts": {

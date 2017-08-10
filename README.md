@@ -22,9 +22,17 @@ or
 ### APIS
 1. onStart:
 * Call when move start
+@params {Object} e Event Object
 
 2. onEnd:
 * Call when move end
+@params {Object} e Event Object
+
+3. onMove:
+* Call when moving
+@params {Number} left content left value
+@params {Number} top content top value
+@params {Object} e Event Object
 
 ### props
 1. top 
@@ -32,6 +40,12 @@ or
 
 2. left
 * Initial left value
+
+3. [width]
+* Content width
+
+4. [speed]
+* Drag acceleration default 0
 
 ### github:
 
