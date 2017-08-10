@@ -9,7 +9,7 @@ Or assign the component that you want to drag to the content props
     npm install drag-component --save
 
 ### How to using:
-    import Dragme from 'dragme'
+    import Dragme from 'drag-component'
 
     <Dragme><YouCompoment /></Dragme>
 
