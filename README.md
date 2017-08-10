@@ -1,23 +1,25 @@
-#Dragme
+# Dragme
 
-###Dragme is an drag component with react.js\<br>
+### Dragme is an drag component with react.js\<br>
 
 Use this component to wrap the components you want to drag\<br>
 Or assign the component that you want to drag to the content props\<br>
 
-###install:
+### install:
     npm install dragme --save
 
-###How to using:\<br>
+### How to using:\<br>
     import Dragme from 'dragme'
 
     <Dragme><YouCompoment /></Dragme>
 
-or
+* or
 
     <Dragme
       content={<YouComponent />}
     />
 
-###github:
+### github:
+    
+* https://github.com/taifu5522/dragme
   
