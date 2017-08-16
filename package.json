@@ -5,7 +5,8 @@
   "main": "./lib/dragme.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lib": "babel src -d lib"
+    "lib": "babel src -d lib",
+    "demo":"webpack -p && open demo/index.html"
   },
   "author": "",
   "license": "ISC",

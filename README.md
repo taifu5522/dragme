@@ -5,18 +5,22 @@
 Use this component to wrap the components you want to drag
 Or assign the component that you want to drag to the content props
 
+### preview:
+    npm run demo
+
 ### install:
     npm install drag-compoment --save
 
 ### How to using:
     import Dragme from 'drag-compoment'
 
-    <Dragme><YouCompoment /></Dragme>
+    <Dragme {...props}><YouCompoment /></Dragme>
 
 or
 
     <Dragme
       content={<YouComponent />}
+      {...props}
     />
 
 ### APIS
